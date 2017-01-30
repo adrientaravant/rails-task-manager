@@ -1,2 +1,11 @@
-<h1>Tasks#show</h1>
-<p>Find me in app/views/tasks/show.html.erb</p>
+<h1>
+  <%= @task.name %>
+</h1>
+<p>
+  <%= @task.done_task ? "Fait" : "A faire" %>
+</p>
+<p> Créée le : <%= @task.created_at %>
+</p>
+
+<%= link_to "Voir toutes les tâches", tasks_path %>
+

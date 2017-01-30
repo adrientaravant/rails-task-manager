@@ -1,0 +1,17 @@
+<ul>
+<%= form_for(@task) do |f| %>
+<li>
+  <%= f.label :name, "Tâche" %>
+  <%= f.text_field :name %>
+</li>
+<li>
+  <%= f.label :done_task, "Fait ?" %>
+  <%= f.check_box(:done_task) %>
+</li>
+<li>
+  <%= f.submit %>
+</li>
+<% end %>
+</ul>
+<%= link_to "Voir toutes les tâches", tasks_path %>
+
